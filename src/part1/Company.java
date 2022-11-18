@@ -91,7 +91,7 @@ public class Company {
         Employee[] employees = this.employees ;
         for (int i = 0; i < employees.length; i++) {
             if(employees[i].equals(newBoss)){
-                this.Boss= String.valueOf(newBoss);
+               employees[i]=newBoss ;
             }
         }
         System.out.println("new boss :"+ newBoss);
