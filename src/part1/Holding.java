@@ -74,7 +74,7 @@ public class Holding {
         for (int i = 0; i < companies.length ; i++) {
             if(companies[i]!=null){
                 companies[i]= company;
-                System.out.println(companies[i] +" Добавлен в холдинг !");
+                System.out.println(companies[i].nameCompany +" Добавлен в холдинг !");
                 return;
             }
         }
@@ -84,7 +84,7 @@ public class Holding {
         for (int i = 0; i < companies.length; i++){
             if( companies[i].equals(company)){
                 companies[i]=null ;
-                System.out.println("компания  "+company+" удалено из холдинга  !");
+                System.out.println("компания  "+company.getNameCompany()+" удалено из холдинга  !");
             }
         }}
 

@@ -73,7 +73,7 @@ public class Company {
         for (int i = 0; i <employees.length ; i++) {
             if(employees[i]!=null){
                 employees[i]= person;
-                System.out.println("соотрудник : "+employees[i] +" Добавлен в компанию !");
+                System.out.println("соотрудник : "+employees[i].getNameEmpoyee() +" Добавлен в компанию !");
                 return;
             }
         }
@@ -83,18 +83,18 @@ public class Company {
         for (int i = 0; i < employees.length; i++){
         if( employees[i].equals(person)){
                 employees[i]=null ;
-                System.out.println("соотрудник  "+person+" удалено из компани  !");
+                System.out.println("соотрудник  "+person.getNameEmpoyee()+" удалено из компани  !");
             }
         }}
 
     public  void changeBoss (Employee newBoss){
         Employee[] employees = this.employees ;
         for (int i = 0; i < employees.length; i++) {
-            if(employees[i].equals(newBoss)){
+            if(employees[i].getNameEmpoyee().equals(newBoss)){
                employees[i]=newBoss ;
             }
         }
-        System.out.println("new boss :"+ newBoss);
+        System.out.println("new boss :"+ newBoss.getNameEmpoyee());
     }
 
     public Employee getEmployeeByName(String name) {
