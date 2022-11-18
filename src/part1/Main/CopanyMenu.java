@@ -48,7 +48,7 @@ public class CopanyMenu {
             } else if (command == 6) {
 
 
-        company1.changeBoss(employee1);
+        company1.changeBoss(employee2);
 
             } else if (command == 7) {
                 String employeeName = sc.nextLine();
